@@ -9,7 +9,6 @@ tags:
   - homelab
   - vpn
   - wireguard
-cover: /img/pivpn-logo.png
 ---
 
 [PiVPN][0] is an easy to manage VPN server that can be run on a Raspberry Pi,

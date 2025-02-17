@@ -1,0 +1,8 @@
+<figure>
+    <img src="{{ src }}" alt="{{ alt }}" {% if imgstyle %}style="{{ imgstyle }}"{% endif %}>
+    {% if caption %}
+    <figcaption>
+        {{ caption }}
+    </figcaption>
+    {% endif %}
+</figure>

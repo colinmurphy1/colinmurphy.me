@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    <link rel="stylesheet" href="{{ get_url(path='bolt.min.css', trailing_slash=false) }}">
+    <link rel="stylesheet" href="{{ get_url(path='style.css', trailing_slash=false) }}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ config.title }}">
+    {% block meta %}
+    {% endblock meta %}
+</head>
+<body>
+    {% block header %}
+    <header>
+        <h1>
+            <a href="{{ config.base_url }}">{{ config.title }}</a>
+        </h1>
+        <nav>
+            {% for link in config.extra.nav_links %}
+                <a href="{{ link.url }}">{{ link.title }}</a>
+            {% endfor %}
+        </nav>
+    </header>
+    {% endblock header %}
+
+    {% block content %}
+    {% include "partials/list.html" %}
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,25 @@
+{% for page in paginator.pages %}
+{% if not page.extra.hidden %}
+<section>
+    <h2>
+        <a href="{{ page.permalink}}">{{ page.title | safe }}</a>
+        {% if page.draft %}(DRAFT){% endif %}
+    </h2>
+    
+    {{ page.summary | safe }}
+
+    <div>
+        <time datetime="{{ page.date | date }}">{{ page.date | date(format="%Y-%m-%d") }}</time>
+    </div>
+</section>
+{% endif %}
+{% endfor %}
+
+<nav class="pagination">
+{% if paginator.previous %}
+    <a class="previous" href="{{ paginator.previous }}">&laquo; Previous</a>
+{% endif %}
+{% if paginator.next %}
+    <a class="next" href="{{ paginator.next }}">Next &raquo;</a>
+{% endif %}
+</nav>

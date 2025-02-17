@@ -23,5 +23,5 @@ anchors = "on"
 [extra]
 nav_links = [
     { url = "/about", title = "About" },
-    { url = "https://meshmap.iowamesh.net", title = "Mesh Map" },
+#    { url = "https://meshmap.iowamesh.net", title = "Mesh Map" },
 ]

@@ -21,6 +21,7 @@ anchors = "on"
 
 
 [extra]
+favicon = "/img/favicon.png"
 nav_links = [
     { url = "/about", title = "About" },
 #    { url = "https://meshmap.iowamesh.net", title = "Mesh Map" },

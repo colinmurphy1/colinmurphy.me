@@ -34,6 +34,7 @@ pre, code {
     border-radius: 0;
     border: 0;
     font-size: 0.9em;
+    max-width: none; /* make the code blocks take up to the max content width */
 }
 
 section {

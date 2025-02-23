@@ -37,11 +37,11 @@ pre, code {
     max-width: none; /* make the code blocks take up to the max content width */
 }
 
-section {
-    margin: 4rem 0;
+section, article {
+    margin: 4em 0;
 }
 
-section time {
+time {
     background: transparent;
     padding: 0;
 }

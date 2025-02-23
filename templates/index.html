@@ -33,7 +33,17 @@
     {% endblock header %}
 
     {% block content %}
+
+    {# If any content is provided, show it on the home page #}
+    {% if section.content %}
+    <section>
+        {{ section.content | safe }}
+    </section>
+    {% endif %}
+
+    {# Include the list of posts #}
     {% include "partials/list.html" %}
+    
     {% endblock content %}
 </body>
 </html>

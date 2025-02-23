@@ -7,6 +7,8 @@ tags:
   - linux
   - docker
   - apache guacamole
+aliases:
+  - /posts/2023/12/docker-apache-guacamole/
 ---
 
 [Apache Guacamole][guac] is a web-based RDP, VNC, and SSH client. You can use it

@@ -10,7 +10,7 @@
     {%- endif %}
 {% endblock meta %}
 {% block content %}
-<section>
+<article>
     <h1>{{ page.title }}</h1>
 
     {{ page.content | safe }}
@@ -22,5 +22,5 @@
         <em>(Updated on <time datetime="{{ page.updated | date }}">{{ page.updated | date(format="%Y-%m-%d") }}</time>)</em>
         {% endif %}
     </div>
-</section>
+</article>
 {% endblock content %}

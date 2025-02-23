@@ -3,11 +3,19 @@ title = "About this website"
 description = "About me and this website"
 date = 2024-07-15
 [extra]
-  hidden = true
+  hidden = true # hide from the home page
 +++
 
-Hello! My name is Colin Murphy and this is my website. There's not much here
-currently, but there will be more to come in the future.
+Hello and welcome to my website! This website serves as a personal blog where
+I write about my personal interests and other things I may find others to be
+useful.
+
+## How this site is built
+
+This website is built using the [Zola] static site
+generator, and hosted using Cloudflare Pages. Content is written in Markdown
+using Visual Studio Code. The source code for this website is available on
+[GitHub][gh-source] if you would like to take a look!
 
 ## Cool stuff
 
@@ -16,8 +24,8 @@ currently, but there will be more to come in the future.
 {{ figure(
   src="/img/server.jpg",
   alt="A picture of my home server",
-  caption="The home server in all its glory",
-  imgstyle="max-width: 512px;"
+  caption="An older photo of the home server; there have been some hardware
+    changes since this photo was taken."
 ) }}
 
 Specs:
@@ -31,5 +39,10 @@ Specs:
 
 ### Meshtastic
 
-One of my hobbies as of late is [Meshtastic](https://meshtastic.org), an off-grid communications platform. I run a few nodes and am a member of the [Iowa Mesh](https://iowamesh.net) network.
+One of my hobbies as of late is [Meshtastic], an off-grid communications
+platform. I run a few nodes and am a member of the [Iowa Mesh][iamesh] network.
 
+[gh-source]:https://github.com/colinmurphy1/colinmurphy.me
+[zola]:https://www.getzola.org
+[meshtastic]:https://meshtastic.org
+[iamesh]:https://iowamesh.net

@@ -4,7 +4,7 @@ draft: false
 tags: ['cars', 'repair', 'electronics']
 description: "A guide diagnosing and replacing a Bose amplifier on a 2010-2013 Mazda 3"
 date: 2019-05-20T00:00:00-06:00
-lastmod: 2020-08-06T00:00:00-06:00
+updated: 2020-08-06T00:00:00-06:00
 aliases:
   - /posts/2019/05/replacing-the-bose-amplifier-on-a-mazda3/
   - /posts/mazda-bose/

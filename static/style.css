@@ -1,5 +1,5 @@
 body {
-    max-width: 80ch;
+    max-width: 800px;
     margin: auto;
     padding: 1em;
 }
@@ -38,7 +38,7 @@ pre, code {
 }
 
 section, article {
-    margin: 4em 0;
+    margin: 2em 0;
 }
 
 time {
@@ -54,6 +54,5 @@ time {
 }
 
 @media screen and (min-width: 64em) {
-    body { padding: 2em; }
     header { margin: 2em 0; }
 }

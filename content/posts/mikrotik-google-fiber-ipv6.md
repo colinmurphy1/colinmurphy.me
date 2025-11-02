@@ -39,11 +39,11 @@ Now that an IPv6 prefix has been allocated, we can now assign subnets to individ
 add eui-64=yes from-pool=gfiber interface=bridge
 ```
 
-This command assigns a subnet from the `gfiber` pool created by the DHCPv6 client and assigns it to the bridge interface. EUI-64 must be enabled to generate a unique IPv6 address based on the device's MAC address. If you do not do this, you may run into issues with Duplicate Address Detection (DAD) with your interface's IPv6 address, resulting in loss of IPv6 connectivity on the interface.
+This command assigns a subnet from the `gfiber` pool created by the DHCPv6 client and assigns it to the bridge interface.
 
 ## Testing IPv6
 
-Now that this is configured, your clients should now begin receiving IPv6 addresses through router advertisements. You can test out IPv6 functionality by trying to ping an IPv6 service, e.g. google.com.
+Now that this is configured, your clients should now begin receiving IPv6 addresses through SLAAC. You can test out IPv6 functionality by trying to ping an IPv6 service, e.g. google.com.
 
 ```bash
 # ping -6 -c 4 google.com

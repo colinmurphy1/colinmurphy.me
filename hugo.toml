@@ -1,0 +1,17 @@
+baseURL = "https://colinmurphy.me/"
+languageCode = "en-us"
+title = "Colin Murphy's site"
+theme = "typo"
+enableRobotsTXT = true
+
+[params]
+description = "My personal website"
+showFooter = false
+hideHeader = true
+homeCollection = 'posts'
+paginationSize = 100
+
+[params.breadcrumbs]
+enabled = true
+showCurrentPage = true
+home = "colinmurphy.me"
